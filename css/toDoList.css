@@ -78,3 +78,71 @@ body{
     display: inline-block;
     box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
 }
+
+.addIcon{
+    padding: 0.7rem;
+    color: blue;
+}
+.addIcon:hover{
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.addItemContainer{
+    border-bottom: 2px rgb(155, 152, 152);
+}
+
+#title{
+    border-bottom: 2px rgb(155, 152, 152);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    color: darkblue;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.addBoxInput{
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid lightblue;
+}
+
+.toDosContainer h3{
+    font-family:  'Josefin Sans', sans-serif;
+}
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.delete:hover {
+    background-color: yellow;
+    color: black;
+  }
