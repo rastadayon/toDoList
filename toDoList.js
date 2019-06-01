@@ -15,16 +15,16 @@ $(document).ready(
         });
         
         $(document).on('dblclick','li', function(){
-            $(this).toggleClass('strike').fadeOut('slow');    
+            $(this).toggleClass('strike');    
         });
 
         $(document).on('click', '.trashIcon', function () {
-            $(this).closest('div').fadeOut('slow');
+            $(this).closest('div');
         });
       
-      $('input').focus(function() {
-        $(this).val('');
-      });
+        $('input').focus(function() {
+            $(this).val('');
+        });
       
     $('ol').sortable();  
       

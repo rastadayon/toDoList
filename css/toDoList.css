@@ -129,9 +129,7 @@ ol li:hover {
     background: #ddd;
 }
 
-ol li.checked {
-    background: #888;
-    color: #fff;
+.strike{
     text-decoration: line-through;
 }
 
