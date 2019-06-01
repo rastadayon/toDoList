@@ -4,7 +4,10 @@ $(document).ready(
         $('.addIcon').click(
             function(){
                 var toAdd = $('input[name=addItem]').val();
-                list.append('<div class = "liItem"> <li class="listItem"> <span><i class="far fa-edit editIcon"></i> <i class="far fa-trash-alt trashIcon"></i></span>' + toAdd + '</li>  </div>');
+                if (!toAdd.trim().length) {
+                    return;
+                }
+                list.append('<div class = "liItem"> <li class="listItem" contenteditable="true"> ' + toAdd + '</li>  <span> <i class="far fa-trash-alt trashIcon" contenteditable="false"></i></span> </div>');
 
             });
        
@@ -19,7 +22,7 @@ $(document).ready(
         });
 
         $(document).on('click', '.trashIcon', function () {
-            $(this).closest('div');
+            $(this).closest('div').fadeOut('slow');
         });
       
         $('input').focus(function() {

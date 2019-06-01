@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
 body{
-    background-image: url("Hoi-An-Yellow-City-by-Rehahn.jpg");
+    background-image: url("ylp.jpg");
     background-size: cover;
     overflow: hidden;
     min-height: 100vh;
@@ -11,7 +11,7 @@ body{
 
 .header{
     overflow: hidden;
-    background-color: black;
+    background-color: #843700;
     position: absolute;
     width: 100%;
 }
@@ -24,8 +24,10 @@ body{
     padding: 25px 16px;
     text-decoration: none;
     font-size: 25px;
-    font-family: 'Anton', sans-serif;
-
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Handlee', cursive;
 }
   
 .header a:hover {
@@ -93,7 +95,10 @@ body{
 
 #title{
     border-bottom: 2px rgb(155, 152, 152);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Handlee', cursive;
     font-weight: bolder;
     color: darkblue;
     text-shadow: 2px 2px 4px #000000;
@@ -106,15 +111,19 @@ body{
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid lightblue;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
 }
 
 
-ol li{
+ol .listItem{
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
     text-align: left;
-    width: 95%;
+    width: 80%;
     font-size: 18px;
     transition: 0.2s;
     -webkit-user-select: none;
@@ -125,7 +134,7 @@ ol li{
     float: left;
 }
 
-ol li:hover {
+.listItem:hover {
     background: #ddd;
 }
 
@@ -133,16 +142,24 @@ ol li:hover {
     text-decoration: line-through;
 }
 
-.trashIcon , .editIcon{
+.trashIcon {
     float: right;
-    padding: 2px;
+    padding: 0.7rem;
     margin-right: 2px;
+    margin-right: 20px;
 }
 
 .trashIcon:hover{
     color: red;
 }
 
-.editIcon:hover{
-    color: green;
+.toDoList-container h3{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
+}
+
+.toDosContainer{
+    overflow: hidden;
 }
