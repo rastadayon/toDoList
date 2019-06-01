@@ -1,25 +1,31 @@
+const list = $('.olList');
 $(document).ready(
     function(){
         $('.addIcon').click(
             function(){
                 var toAdd = $('input[name=addItem]').val();
-                 $('ol').append('<li>' + toAdd + '</li>');
+                list.append('<div class = "liItem"> <li class="listItem"> <span><i class="far fa-edit editIcon"></i> <i class="far fa-trash-alt trashIcon"></i></span>' + toAdd + '</li>  </div>');
+
             });
        
-    //    $("input[name=ListItem]").keyup(function(event){
-    //       if(event.keyCode == 13){
-    //         $("#button").click();
-    //       }         
-    //   });
+        $("input[name=addItem]").keyup(function(event){
+            if(event.keyCode == 13){
+                $("addIcon").click();
+            }         
+        });
+        
+        $(document).on('dblclick','li', function(){
+            $(this).toggleClass('strike').fadeOut('slow');    
+        });
+
+        $(document).on('click', '.trashIcon', function () {
+            $(this).closest('div').fadeOut('slow');
+        });
       
-    //   $(document).on('dblclick','li', function(){
-    //     $(this).toggleClass('strike').fadeOut('slow');    
-    //   });
+      $('input').focus(function() {
+        $(this).val('');
+      });
       
-    //   $('input').focus(function() {
-    //     $(this).val('');
-    //   });
-      
-    //   $('ol').sortable();  
+    $('ol').sortable();  
       
  });
