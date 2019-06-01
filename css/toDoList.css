@@ -85,6 +85,7 @@ body{
     padding: 0.7rem;
     color: blue;
 }
+
 .addIcon:hover{
     text-shadow: 1px 1px 1px #000000;
 }
@@ -116,7 +117,6 @@ body{
     font-family: 'Amatic SC', cursive;
     font-size: 28px;
 }
-
 
 .listItem{
     cursor: pointer;

@@ -28,7 +28,5 @@ $(document).ready(
         $('input').focus(function() {
             $(this).val('');
         });
-      
-    $('ol').sortable();  
-      
+            
  });
